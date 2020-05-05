@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyBank</string>
+    <string name="dni">DNI</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="error_formating_password">El pin debe ser 4 digitos</string>
+    <string name="error_formating_dni">Error en el formato del DNI</string>
+    <string name="error_login">Dni o password incorrectos</string>
+    <string name="account">Cuenta corriente</string>
+    <string name="card">Tarjeta</string>
+    <string name="info">info</string>
+    <string name="url_github">https://github.com/Alhima/MyBank</string>
+    <string name="network_availability">Internet disponible</string>
+</resources>

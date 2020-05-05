@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion androidCompileSdkVersion
+    defaultConfig {
+        applicationId applicationId
+        minSdkVersion androidMinimumSdkVersion
+        targetSdkVersion androidTargetSdkVersion
+        versionCode applicationVersionCode
+        versionName applicationVersionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+
+    implementation kotlin_JDK8
+    implementation appCompat
+    implementation design
+    implementation appCompat
+    implementation recycler_view
+    implementation card_view
+    implementation kotlin_JDK8
+    implementation androidx_lifecycle
+    implementation retrofit
+    implementation retrofit_gson_converter
+    implementation okHttp
+    implementation okHttp_logger
+    implementation gson
+    implementation koin
+    implementation koin_viewmodel
+    implementation constraint_layout
+    implementation rx_binding
+    implementation rx_binding_core
+    implementation rx_binding_appcompat
+    implementation rx_binding_recyclerview
+    implementation rx_binding_material
+    implementation rx_java
+    implementation rx_android
+    implementation rx_kotlin
+    implementation rx_retrofit_adapter
+    implementation firebase_core
+
+
+    androidTestImplementation espresso
+    androidTestImplementation espresso_rules
+    androidTestImplementation espresso_runner
+    testImplementation mockito
+    testImplementation core_testing
+    testImplementation mockito_kotlin
+    testImplementation mockito_core
+    testImplementation kotlin_test_junit
+    testImplementation junit
+}
